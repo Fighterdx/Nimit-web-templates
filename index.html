@@ -6,89 +6,124 @@
   <title>Nimit Web Templates</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      text-align: center;
+      color: #333;
     }
-    header {
-      background: #007acc;
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #007acc, #005f99);
       color: white;
-      padding: 20px;
+      text-align: center;
+      padding: 80px 20px;
     }
-    h1 {
+    .hero h1 {
+      font-size: 2.8rem;
+      margin: 0 0 15px;
+    }
+    .hero p {
+      font-size: 1.2rem;
       margin: 0;
     }
-    p {
-      margin: 10px 0 20px;
-      font-size: 18px;
-    }
+
+    /* Container */
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
       max-width: 1200px;
-      margin: auto;
+      margin: 0 auto;
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
+
+    /* Card */
     .card {
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
       transition: transform 0.3s ease;
     }
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
     .card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
     .card h2 {
-      margin: 15px 0 10px;
-      font-size: 20px;
-      color: #333;
+      margin: 20px 0 10px;
+      font-size: 1.4rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin: 0 20px 20px;
     }
     .card a {
       display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       padding: 10px 20px;
       background: #007acc;
       color: white;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 5px;
       transition: background 0.3s ease;
     }
     .card a:hover {
       background: #005f99;
     }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>My Web Templates</h1>
-    <p>Templates made by me using HTML, CSS, and Bootstrap</p>
-  </header>
 
-  <div class="container">
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Quickly Create Landing Pages</h1>
+    <p>Explore my custom HTML, CSS, and Bootstrap templates</p>
+  </section>
+
+  <!-- Template Cards -->
+  <section class="container">
     <div class="card">
-      <img src="template1/image/preview.jpg" alt="Template 1 Preview">
+      <img src="template1/images/preview.jpg" alt="Template 1">
       <h2>Template 1</h2>
+      <p>A clean and modern layout built with HTML, CSS and Bootstrap.</p>
       <a href="template1/">View Template</a>
     </div>
+
     <div class="card">
-      <img src="template2/images/preview.jpg" alt="Template 2 Preview">
+      <img src="template2/images/preview.jpg" alt="Template 2">
       <h2>Template 2</h2>
+      <p>A stylish template with responsive design and rich typography.</p>
       <a href="template2/">View Template</a>
     </div>
+
     <div class="card">
-      <img src="template3/images/preview.jpg" alt="Template 3 Preview">
+      <img src="template3/images/preview.jpg" alt="Template 3">
       <h2>Template 3</h2>
+      <p>A creative design perfect for portfolios and personal sites.</p>
       <a href="template3/">View Template</a>
     </div>
-  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nimit Gelani | Built with HTML, CSS & Bootstrap</p>
+  </footer>
+
 </body>
 </html>
